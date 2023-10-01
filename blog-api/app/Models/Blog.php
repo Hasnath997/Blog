@@ -23,8 +23,8 @@ class Blog extends Model
         });
     }
     
-    public function getSlugAttribute()
+    public function getTitleAttribute($value)
     {
-        return Str::slug($this->title);
+        return Str::slug($value);
     }
 } 
